@@ -1,10 +1,9 @@
 # -*- coding: utf-8 -*-
-"""
-Spyder Editor
 
-This is a temporary script file.
 """
-
+ICP1
+Author: Dietrich Kruse
+"""
 # =============================================================================
 # Requests a word from user input 
 # Creates new_string using only the letters from indices 1:4
