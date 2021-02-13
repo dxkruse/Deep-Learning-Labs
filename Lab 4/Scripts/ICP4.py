@@ -43,9 +43,10 @@ model.fit(X_train, Y_train)
 Y_pred = model.predict(X_test)
 
 #Calculate score and classification report
-nb_score = round(model.score(X_train, Y_train) * 100, 2)
+nb_score1 = sklearn.metrics.accuracy_score(Y_test, Y_pred)
+nb_score2 = round(model.score(X_train, Y_train) * 100, 2)
 nb_report = sklearn.metrics.classification_report(Y_test, Y_pred)
-print("Naive Bayes Accuracy: ", nb_score)
+print("Naive Bayes Accuracy: ", nb_score1)
 print("Classification Report: \n", nb_report)
 
 #%% Problem 3
@@ -58,8 +59,9 @@ svc.fit(X_train, Y_train)
 Y_pred = svc.predict(X_test)
 
 # Calculate score and classification report
-svm_score = round(svc.score(X_train, Y_train) * 100, 2)
+svm_score1 = sklearn.metrics.accuracy_score(Y_test, Y_pred)
+svm_score2 = round(svc.score(X_train, Y_train) * 100, 2)
 svm_report = sklearn.metrics.classification_report(Y_test, Y_pred)
-print("SVM Accuracy:", svm_score)
+print("SVM Accuracy:", svm_score1)
 print("Classification Report: \n", svm_report)
 
