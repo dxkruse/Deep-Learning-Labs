@@ -30,6 +30,8 @@ print("Correlation Coefficient: ", r_squared)
 
 #%% Problem 2
 
+# Using Naive Bayes to create a model and predict glass types
+
 df = pd.read_csv('glass.csv')
 
 # Split data into training and testing sets
