@@ -19,6 +19,8 @@ from keras.layers.convolutional import MaxPooling2D
 from keras.utils import np_utils
 from keras import backend as K
 import matplotlib.pyplot as plt
+
+# had to change to set_image_dim_ordering("th") to set_image_data_format("channels_last")
 K.set_image_data_format('channels_last')
 
 # fix random seed for reproducibility
