@@ -33,3 +33,4 @@ my_first_nn_fitted = my_first_nn.fit(X_train, Y_train, epochs=100,
                                      initial_epoch=0)
 print(my_first_nn.summary())
 print(my_first_nn.evaluate(X_test, Y_test))
+
